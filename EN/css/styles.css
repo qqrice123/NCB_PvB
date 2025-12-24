@@ -699,13 +699,13 @@ p a:active {
 
 .floating-decoration.inside2 {
     left: -10%;
-    top: 44%;
+    top: 45%;
     animation: float 6s ease-in-out infinite;
 }
 
 .floating-decoration.inside3 {
     left: -10%;
-    top: 57%;
+    top: 56%;
     animation: float 6s ease-in-out infinite;
 }
 
