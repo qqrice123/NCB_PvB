@@ -699,7 +699,7 @@ p a:active {
 
 .floating-decoration.inside2 {
     left: -10%;
-    top: 46%;
+    top: 44%;
     animation: float 6s ease-in-out infinite;
 }
 
