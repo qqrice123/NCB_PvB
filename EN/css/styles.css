@@ -705,13 +705,13 @@ p a:active {
 
 .floating-decoration.inside3 {
     left: -10%;
-    top: 58%;
+    top: 54%;
     animation: float 6s ease-in-out infinite;
 }
 
 .floating-decoration.inside4 {
     left: -10%;
-    top: 51%;
+    top: 47%;
     animation: float 6s ease-in-out infinite;
 }
 
