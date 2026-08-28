@@ -1,0 +1,95 @@
+/* ========================================================================
+   POPUP BANNER
+   ======================================================================== */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+}
+.popup-container img {
+    max-width: 100%;
+    max-height: 85vh;
+    display: block;
+    border-radius: 4px;
+}
+@media (max-width: 991px) {
+    .popup-container img {
+        max-width: 90vw;
+        max-height: 85vh;
+    }
+}
+.popup-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    z-index: 1;
+    transition: background 0.2s;
+}
+.popup-close:hover {
+    background: var(--dark-color);
+}
+
+/* ========================================================================
+   POPUP FLOATER
+   ======================================================================== */
+.popup-floater {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+.popup-floater.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.popup-floater:hover {
+    transform: scale(1.1);
+}
+.popup-floater img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
