@@ -13,8 +13,28 @@
 	<link rel="preload" href="fonts/noto-serif-sc-v33-chinese-simplified_latin-300.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../shared/css/popup.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<!-- Popup Banner -->
+<div id="popupBanner" class="popup-overlay">
+    <div class="popup-container">
+        <button class="popup-close" id="popupClose">&times;</button>
+        <a href="https://www.ncb.com.hk/nanyang_bank/resource/product/NCB_PrivateBanking_ePrivilegePack.pdf" target="_blank">
+            <picture>
+                <source media="(max-width: 991px)" srcset="../shared/images/ncb_club_popup_sc_m.gif">
+                <img src="../shared/images/ncb_club_popup_sc.gif" alt="NCB Club Popup">
+            </picture>
+        </a>
+    </div>
+</div>
+
+<!-- Popup Floater -->
+<a id="popupFloater" class="popup-floater" href="https://www.ncb.com.hk/nanyang_bank/resource/product/NCB_PrivateBanking_ePrivilegePack.pdf" target="_blank">
+    <img src="../shared/images/ncb_club_ex_qrcode.png" alt="NCB Club QR">
+</a>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top transition-navbar">
     <div class="container">
@@ -243,5 +263,6 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- Custom JavaScript -->
 <script src="js/scripts.js"></script>
+<script src="../shared/js/popup.js"></script>
 </body>
 </html>
